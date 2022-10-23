@@ -6,3 +6,6 @@ mval1: .float -8.0546875
 mval2: .float -0.179931640625000018
 dval1: .float 86.25
 dval2: .float -4.875
+
+
+ "program": "${workspaceFolder}/<executable file>",

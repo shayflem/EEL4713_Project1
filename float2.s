@@ -1,5 +1,6 @@
+.section .text
 .global fdiv
-.text
+
 fdiv:
 PUSH dword ptr 5;
 FILD[esp];
