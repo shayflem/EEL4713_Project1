@@ -1,4 +1,6 @@
 //65*a can overflow
+
+fmult:
 unsigned scale_int_32bit(unsigned a){
 return (a*65U+50)/100;
 }

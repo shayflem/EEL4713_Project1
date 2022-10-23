@@ -1,3 +1,5 @@
+
+fdiv:
 push dword ptr 5;
  fild [esp];
  fild [esp];
