@@ -1,6 +1,9 @@
-//65*a can overflow
-
+.global fmult
+.text
 fmult:
+//push %ebp
+//mov  %esp,%ebp
+//65*a can overflow
 unsigned scale_int_32bit(unsigned a){
 return (a*65U+50)/100;
 }
