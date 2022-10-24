@@ -2,15 +2,8 @@
 .global fdiv
 
 fdiv:
-PUSH dword ptr 5;
-FILD[esp];
-FILD [esp];
-ADD esp, 4;
-FADD ST(0), ST(0);
-FDIVP ST(1), ST(0);
-SUB esp, 4;
-FSTP [esp];
-POP eax;
-MOV res,eax;
-ADD esp, 4;
-ret
+LDURS S4, [X28,c]
+LDURS S6, [X28,a]
+FDIVS S2, S4,S6
+STURS S2, [X28,b]
+BR LR
